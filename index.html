@@ -2,127 +2,52 @@
 <html>
 <head>
   <title>Hoods: San Francisco Edition</title>
-  <style>
-
-    body {
-      background: lightgrey;
-    }
-
-    #nav {
-      list-style: none;
-      text-align: center;
-      padding-left: 15px;
-    }
-
-    #nav li {
-      display: inline;
-      padding-right: 20px;
-      /*padding-left: 0px;*/
-    }
-
-    #nav li a {
-      display: inline-block;
-    }
-
-
-    h1 {
-      font-size: 3em;
-      text-align: center;
-      margin-bottom: 0px;
-    }
-
-    h2 {
-      margin-top: 0px;
-    }
-
-    h2, h3, p {
-      text-align: center;
-    }
-
-    img {
-      width: 400px;
-      height: 300px;
-      border: 1px solid black;
-    }
-
-    #main-container {
-      padding: 0px 60px;
-
-    }
-
-    #main-map {
-      text-align: center;
-      margin-bottom: 20px;
-
-    }
-
-    #map {
-      width: 750px;
-      height: 400px;
-      outline: 2px solid black;
-    }
-
-    #comment-form {
-      outline: 1px solid black;
-      text-align: center;
-      width: 900px;
-      margin: auto;
-    }
-
-    #comment-box {
-      vertical-align: top;
-      height: 100px;
-      width: 800px; 
-      margin-bottom: 10px;
-      display: inline-block;
-    }
-
-    button {
-      color: white;
-      background: grey;
-      height: 105px;
-    }
-
-    #form-menus {
-      padding-bottom: 15px;
-    }
-
-  </style>
+  <link href='https://fonts.googleapis.com/css?family=Yellowtail|Covered+By+Your+Grace|Gloria+Hallelujah|Walter+Turncoat' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
 <div id="main-container">
-  <h1>Hoods!</h1>
-  <h2>San Francisco Edition</h2>
 
-  <nav>
-    <ul id="nav">
-      <li><a href="about.html">About Hoods</a></li>
-      <li><a href="suggest.html">Suggest a Hood</a></li>
-    </ul>
-  </nav>
+  <header id="header">
+    <nav>
+      <ul id="nav">
+        <li ><a class="logo" id="logo" href="index.html">Hoods!</a></li>
+        <li class="directional"><a href="about.html">About Hoods!</a></li>
+        <li class="directional"><a href="suggest.html">Suggest a Hood</a></li>
+      </ul>
+    </nav>
 
-  <div id="main-map">
-    <img id="map" src="images/sf.png">
+    <div id="title">
+      <h1>Hoods!</h1>
+      <h2>San Francisco Edition</h2>
+    </div>
+  </header>
 
-  </div id="content">
+  <main>
+    
 
-    <table>
+    <table id="hoods-table" >
       <tr>
-        <td>
+        <td class="hoodpic">
 
-          <a href="http://www.sanfrancisco.travel/article/nob-hill-touch-class"><img src="images/nobhill.jpg"></a>
+         <a href="http://www.sanfrancisco.travel/article/nob-hill-touch-class"><img src="images/nobhill.jpg">
+         <h3>Nob Hill</h3>
+         </a>
 
-          <a href="http://www.sanfrancisco.travel/article/nob-hill-touch-class"><h3>Nob Hill</h3></a>
-          <p>Fanciest part of town, best views in the city</p>
+          
+          <p>Fanciest part of town, best views of the city</p>
+          
         </td>
-        <td>
+        
+        <td class="hoodpic">
 
-          <a href="http://www.sanfranciscochinatown.com/"><img src="images/chinatown.jpg"></a>
-          <a href="http://www.sanfranciscochinatown.com/"><h3>Chinatown</h3></a>
+          <a href="http://www.sanfranciscochinatown.com/"><img src="images/chinatown.jpg">
+          <h3>Chinatown</h3></a>
           <p>Cheap, crowded, <em>killer</em> Chinese food</p>
+          
         </td>
-        <td>
+        <td class="hoodpic">
 
           <a href="http://northbeachbusinessassociation.com/site/"><img src="images/northbeach.jpg"></a>
           <a href="http://northbeachbusinessassociation.com/site/"><h3>North Beach</h3></a>
@@ -130,19 +55,19 @@
         </td>
       </tr>
       <tr>
-        <td>
+        <td class="hoodpic">
 
           <a href="http://www.sfgate.com/neighborhoods/sf/marina/"><img src="images/marina.jpg"></a>
           <a href="http://www.sfgate.com/neighborhoods/sf/marina/"><h3>The Marina</h3></a>
           <p>Posh restaurants & clubs, finance bros, and boats</p>
         </td>
-        <td>
+        <td class="hoodpic">
 
           <a href="https://www.vice.com/read/i-went-on-a-police-ride-along-in-san-franciscos-worst-neighborhood"><img src="images/tenderloin.jpg"></a>
           <a href="https://www.vice.com/read/i-went-on-a-police-ride-along-in-san-franciscos-worst-neighborhood"><h3>Tenderloin</h3></a>
           <p>Bums, crack and more bums</p>
         </td>
-        <td>
+        <td class="hoodpic">
 
           <a href="http://www.10best.com/destinations/california/san-francisco/mission-district/"><img src="images/mission.jpg"></a>
           <a href="http://www.10best.com/destinations/california/san-francisco/mission-district/"><h3>Mission District</h3></a>
@@ -150,17 +75,17 @@
         </td>
       </tr>
       <tr>
-        <td>
+        <td class="hoodpic">
           <a href="http://wikitravel.org/en/San_Francisco/Haight"><img src="images/haight.jpg"></a>
           <a href="http://wikitravel.org/en/San_Francisco/Haight"><h3>The Haight</h3></a>
           <p>Hippy haven of yesteryear, funky shops and organic eats</p>
         </td>
-        <td>
+        <td class="hoodpic">
           <a href="https://www.timeout.com/san-francisco/neighborhoods/soma-san-francisco"><img src="images/soma.jpg"></a>
           <a href="https://www.timeout.com/san-francisco/neighborhoods/soma-san-francisco"><h3>SOMA</h3></a>
           <p>Near downtown, brand new condos, and more gentrification</p>
         </td>
-        <td>
+        <td class="hoodpic">
 
           <a href="http://www.friendlyneighborhoodguide.com/neighborhoods/10/san-francisco/richmond-district"><img src="images/richmond.jpg"></a>
           <a href="http://www.friendlyneighborhoodguide.com/neighborhoods/10/san-francisco/richmond-district"><h3>Sunset/Richmond</h3></a>
@@ -168,39 +93,58 @@
         </td>
       </tr>
     </table>
+    </main>
 
-    <div>
-      <p>Check out <a href="http://www.sfgate.com/neighborhoods/">SF Gate: Neighborhoods</a> if you want a terribly busy site with horrible styling, lots of ads, and even worse formatting! </p>
-    </div>
+    <hr>
 
-    <div id="comment-form">
-      <p style="padding-top: 10px"><strong>Have something to add about our neighborhoods?  Let us know below...</strong></p>
-      <form action="success.html" method="post">
-        <textarea id="comment-box" type="text" placeholder="What's your favorite part about this neighborhood..."></textarea>
+    <footer>
 
-        <button type="submit" onclick="alert('Your suggestion has been submitted.  Thank you!')">Submit</button>
+      <div>
+        <p id="reference">Check out <a href="http://www.sfgate.com/neighborhoods/">SF Gate: Neighborhoods</a> if you want a terribly busy site with horrible styling, lots of ads, and even worse formatting! :) <br> Hoods! is the best coverage available on the internet today for the latest buzz going on in YOUR hood!</p>
+      </div>
 
-        <div id="form-menus">
-          <label>Neighborhood:</label>
-          <select name="hood"> == $0
-            <option value="town">Chinatown</option>
-            <option value="town">Mission District</option>
-            <option value="town">Nob Hill</option>
-            <option value="town">North Beach</option>
-            <option value="town">Tenderloin</option>
-            <option value="town">The Haight</option>
-            <option value="town">The Marina</option>
-            <option value="town">SOMA</option>
-            <option value="town">Sunset/Richmond</option>
-          </select>
-          <input style="padding-left: 5px" type="checkbox" name="residence">
-          <label >I live in SF</label>
-          <input style="padding-left: 10px" type="checkbox" name="residence">
-          <label >I have visited SF</label>
-        </div>
-      </form>
-    </div>
+    
+
+      <div id="comment-form">
+        <p id="hood-comment-p"><strong>Have something to add about our neighborhoods?  Let us know below...</strong></p>
+        <form action="success.html" method="post">
+
+          <div id="form-menus">
+            <label>Neighborhood:</label>
+            <select name="hood"> 
+              <option value="town">Choose one...</option>
+              <option value="town">Chinatown</option>
+              <option value="town">Mission District</option>
+              <option value="town">Nob Hill</option>
+              <option value="town">North Beach</option>
+              <option value="town">Tenderloin</option>
+              <option value="town">The Haight</option>
+              <option value="town">The Marina</option>
+              <option value="town">SOMA</option>
+              <option value="town">Sunset/Richmond</option>
+              <option value="town">Other...</option>
+            </select>
+            <div>
+              <input type="checkbox" name="residence">
+              <label class="residence">I live in SF</label>
+              <input  type="checkbox" name="residence">
+              <label class="residence">I have visited SF</label>
+            </div>
+
+          </div>
+
+          <textarea id="comment-box" type="text" placeholder="What's your favorite part about this neighborhood..."></textarea>
+
+          <button type="submit" onclick="alert('Your suggestion has been submitted.  Thank you!')">Submit</button>
+
+          
+        </form>
+      </div>
+
+    </footer>
+
 
   </div>
+
 </body>
 </html>

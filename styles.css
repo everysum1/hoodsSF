@@ -1,0 +1,245 @@
+
+    /*orange - FF3500
+    green - 87FB00
+    blue - #0BA5F0*/
+
+
+    body {
+      background: #EDEFED;
+      font-family: "Walter Turncoat";
+      padding: 0;
+      margin: 0 0;
+
+    }
+
+    #main-container {
+      padding: 0;
+      margin: 0;
+      padding-bottom: 5%;
+    }
+
+    #header {
+      background-image: url("images/sfgirl.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+      width: 100%;
+      height: 25em;
+      padding-bottom: 10%;
+      padding-top: 0;
+      margin-top: 0;
+      margin-bottom: 7%;
+    }
+
+    #nav {
+      list-style: none;   
+      padding-left: 0;   
+    }
+
+    #nav li {
+      display: inline;
+      
+    }
+
+    #nav li a {
+      display: inline-block;
+      padding-right: 2%;
+      color: white;
+      text-shadow: 1px 1px 2px black;
+      text-decoration: none;
+      font-size: 1.7em;
+    }
+
+    #logo:hover {
+      text-decoration: underline;
+    }
+
+    li a#logo {
+      font-size: 3em;
+      font-family: Yellowtail;
+      opacity: 0.9;
+    }
+
+    #logo a:hover {
+      opacity: 1;
+    }
+
+    #directional {
+      float: right; 
+    }
+
+    .directional:hover {
+      border: 3px solid #BE766B;
+    }
+
+    #nav:first-child {
+      padding-right: 0;
+      margin-right: 5%;
+    }
+
+    #title {
+      float: right;
+      text-align: right;
+      padding-right: 3%;
+      padding-top: 15%;
+      font-family: Yellowtail;
+      color: white;
+      text-shadow: 2px 2px 3px black;
+    }
+
+    #hoods-table {
+      padding-top: 4%;
+      width: 100%;
+      text-align: center;
+      border-collapse: collapse;
+    }
+
+    h1 {
+      font-size: 3.9em;
+    }
+
+    h2 {
+      font-size: 2.5em;
+    }
+
+
+    main td {
+      width: 30%;
+      text-align: center;
+      vertical-align: top;
+    }
+
+
+    .hoodpic img {
+      height: 20em;
+      width: 80%;
+      opacity: 1;
+
+    }
+
+    .hoodpic img:hover {
+      opacity: 0.75;
+    }
+ 
+
+    h3, p {
+      text-align: center;
+      text-decoration: none;
+    }
+
+    h3 {
+      color: white;
+      font-size: 2.5em;
+      text-shadow: 
+        7px 5px 5px #000,
+        -5px -1px 10px #000,
+        1px -1px 0 #000,
+        -5px -1px 0 #000,
+        1px -1px 0 #000;
+      margin: 6% 15%;
+      padding-top: 5%;
+      opacity: 0.8;
+    }
+
+    h3:hover {
+      opacity: 1;
+      border-top: 2px solid black;
+    }
+
+    a img {
+      width: 60%;
+      height: 45%;
+      border: 1px solid black;
+    }
+
+    div #reference {
+      padding: 8% 5%;
+      
+    }
+
+    div #reference p {
+      padding:0; 
+      margin: 0;
+    }
+
+    #hood-comment-p {
+      padding-top: 8%;
+    }
+
+    #comment-form {
+      outline: 1px solid black;
+      text-align: center;
+      width: 90%;
+      margin: auto;
+    }
+
+    #comment-box {
+      vertical-align: top;
+      height: 10em;
+      width: 90%; 
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+
+    button {
+      color: white;
+      background: grey;
+      height: 10.5em;
+      vertical-align: center;
+    }
+
+    #form-menus {
+      padding-bottom: 10%;
+    }
+
+    .residence {
+      padding-right: 6%;
+    }
+
+
+    @media screen and (max-width: 770px) {
+      button {
+        width: 91%;
+        height: 2em;
+        margin-bottom: 2%
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+
+      #nav li a {
+        display: block;
+      }
+
+      .directional:hover {
+        border: none;
+        text-decoration: underline;
+      }
+
+      .logo:hover {
+        border-bottom: none;
+        text-decoration: underline;
+      }
+
+      #hoods-table tr td {
+        display: block;
+        width: 100%;
+        padding-bottom: 2.5em;
+        margin-bottom: 2.5em;
+        margin-top: 2.5em;
+        border-bottom: 0.5px solid lightgrey;
+      }
+
+      #hoods-table tr td:last-child {
+        border-bottom: none;
+      }
+
+      #hood-comment {
+        width: 100%;
+      }
+
+      .residence {
+        padding-right: 2%;
+      }
+  
+    }
